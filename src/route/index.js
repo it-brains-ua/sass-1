@@ -12,7 +12,7 @@ router.get('/', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('index', {})
+  res.render('index', { style: 'index.css' })
   // ↑↑ сюди вводимо JSON дані
 })
 
@@ -20,7 +20,7 @@ router.get('/new', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('new', {})
+  res.render('new', { style: 'new.css' })
   // ↑↑ сюди вводимо JSON дані
 })
 
