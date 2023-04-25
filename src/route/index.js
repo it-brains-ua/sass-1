@@ -22,7 +22,10 @@ router.get('/new', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('new/index', { style: 'new' })
+  res.render('new/index', {
+    layout: 'large/index',
+    style: 'new',
+  })
   // ↑↑ сюди вводимо JSON дані
 })
 
