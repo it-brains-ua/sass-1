@@ -5,4 +5,9 @@
   border: 1px solid red;
 }
 
-/*# sourceMappingURL=index.css.map */
+h1 {
+  color: red;
+  margin: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */
