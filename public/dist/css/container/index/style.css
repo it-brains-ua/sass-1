@@ -1,3 +1,100 @@
+.chat-item {
+  display: flex;
+  gap: 8px;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.chat-item-info {
+  display: grid;
+  gap: 8px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1e2a35;
+}
+
+.message {
+  font-weight: 400;
+  font-size: 16px;
+  color: #1e2a35;
+}
+
+.chip, .approved, .pending, .rejected {
+  border-radius: 5px;
+  padding: 4px 8px;
+  width: fit-content;
+}
+
+.rejected {
+  background-color: #f64e60;
+}
+
+.pending {
+  background-color: #f64e60;
+}
+
+.approved {
+  background-color: #0bb7af;
+}
+
+.cost-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.cost, .earnings, .sales, .ref-earning, .balance {
+  opacity: 0.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.balance {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #0bb7af;
+}
+
+.ref-earning {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #f64e60;
+}
+
+.sales {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ee9d01;
+}
+
+.earnings {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #2962ff;
+}
+
+.cost-info p {
+  font-weight: 400;
+  color: #757e85;
+}
+.cost-info .price {
+  font-weight: 600;
+  font-size: 24px;
+  color: #1e2a35;
+}
+
 body {
   background-color: #757e85;
 }
@@ -16,6 +113,9 @@ body {
   border-radius: 5px;
 }
 
+.title {
+  margin-bottom: 24px;
+}
 .title h3 {
   font-weight: 600;
   font-size: 18px;
@@ -25,7 +125,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #757e85;
-  margin-bottom: 24px;
 }
 
 .divider {
