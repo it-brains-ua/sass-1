@@ -1,0 +1,47 @@
+.chat-item {
+  display: flex;
+  gap: 8px;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.chat-item-info {
+  display: grid;
+  gap: 8px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1e2a35;
+}
+
+.message {
+  font-weight: 400;
+  font-size: 16px;
+  color: #1e2a35;
+}
+
+.chip, .approved, .pending, .rejected {
+  border-radius: 5px;
+  padding: 4px 8px;
+  width: fit-content;
+}
+
+.rejected {
+  background-color: #f64e60;
+}
+
+.pending {
+  background-color: #f64e60;
+}
+
+.approved {
+  background-color: #0bb7af;
+}
+
+/*# sourceMappingURL=style.css.map */

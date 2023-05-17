@@ -1,0 +1,61 @@
+
+$primary-text: #1e2a35
+$secondary-text: #757e85
+
+// створюємо міксин який буде задавати відступи в flex або grid контейнерах,відступ буде в 4 рази більший ніж змінна $gap
+@mixin spacing($gap)
+  gap: $gap * 4px
+
+// створюємо міксин який буде створювати округлий елемент з розмірами які передаються в змінній $size
+@mixin circle($size)
+  height: $size * 1px
+  width: $size * 1px
+  border-radius: 50%
+
+// виведемо в консоль повідомлення про помилку
+// @error "Test error message";
+
+body
+  background-color: #757e85
+
+.wrapper
+  display: grid
+  margin: 30px auto
+  width: 60%
+  // викликаючи міксин spacing з файлу scss задаємо відступи нашому контейнеру
+  @include spacing(8)
+
+.container
+  background-color: #fff
+  display: grid
+  padding: 16px 32px
+  border-radius: 5px
+
+.title
+  // використовуючи вкладеність задаємо стилі тегу h3 який знаходиться в елементі з класом .title
+  h3
+    font-weight: 600
+    font-size: 18px
+    // використовуємо змінні записані в файлі scss
+    color: $primary-text
+  // використовуючи вкладеність задаємо стилі тегу p який знаходиться в елементі з класом .title
+  p
+    font-weight: 400
+    font-size: 16px
+    // використовуємо змінні записані в файлі scss
+    color: $secondary-text
+    margin-bottom: 24px
+
+.divider
+  height: 1px
+  width: 90%
+  background-color: #dee2e6
+
+.costs-container
+  display: flex
+  justify-content: space-between
+
+.chats
+  display: grid
+  // викликаючи міксин spacing з файлу scss задаємо відступи нашому контейнеру
+  @include spacing(4)

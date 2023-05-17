@@ -1,0 +1,47 @@
+body {
+  background-color: #757e85;
+}
+
+.wrapper {
+  display: grid;
+  margin: 30px auto;
+  width: 60%;
+  gap: 32px;
+}
+
+.container {
+  background-color: #fff;
+  display: grid;
+  padding: 16px 32px;
+  border-radius: 5px;
+}
+
+.title h3 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #1e2a35;
+}
+.title p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #757e85;
+  margin-bottom: 24px;
+}
+
+.divider {
+  height: 1px;
+  width: 90%;
+  background-color: #dee2e6;
+}
+
+.costs-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chats {
+  display: grid;
+  gap: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,74 @@
+@use "../../container/index/service.scss";
+@use "../../container/index/varibles.scss";
+
+// кольори типів фінансів
+$balance-color: #0bb7af;
+$ref-earning-color: #f64e60;
+$sales-color: #ee9d01;
+$earning-color: #2962ff;
+
+.cost-item {
+    display: flex;
+    // викликаючи міксин spacing з файлу service.scss задаємо відступи нашому контейнеру
+    @include service.spacing(2);
+    align-items: center;
+}
+
+.cost {
+    opacity: 0.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.balance {
+    // викликаючи міксин circle з файлу service.scss створюємо круглий елемент з розміром 50px
+    @include service.circle(50);
+    // успадковуємо стилі класу .cost
+    @extend .cost;
+    // використовуємо змінні записані в файлі varibles.scss
+    background-color: $balance-color;
+}
+
+.ref-earning {
+    // викликаючи міксин circle з файлу service.scss створюємо круглий елемент з розміром 50px
+    @include service.circle(50);
+    // успадковуємо стилі класу .cost
+    @extend .cost;
+    // використовуємо змінні записані в файлі varibles.scss
+    background-color: $ref-earning-color;
+}
+
+.sales {
+    // викликаючи міксин circle з файлу service.scss створюємо круглий елемент з розміром 50px
+    @include service.circle(50);
+    // успадковуємо стилі класу .cost
+    @extend .cost;
+    // використовуємо змінні записані в файлі varibles.scss
+    background-color: $sales-color;
+}
+
+.earnings {
+    // викликаючи міксин circle з файлу service.scss створюємо круглий елемент з розміром 50px
+    @include service.circle(50);
+    // успадковуємо стилі класу .cost
+    @extend .cost;
+    // використовуємо змінні записані в файлі varibles.scss
+    background-color: $earning-color;
+}
+
+.cost-info {
+    // використовуючи вкладеність задаємо стилі тегу p який знаходиться в елементі з класом .cost-info
+    p {
+        font-weight: 400;
+        // використовуємо змінні записані в файлі varibles.scss
+        color: varibles.$secondary-text;
+    }
+    // використовуючи вкладеність задаємо стилі елементу з класом .price який знаходиться в елементі з класом .cost-info
+    .price {
+        font-weight: 600;
+        font-size: 24px;
+        // використовуємо змінні записані в файлі varibles.scss
+        color: varibles.$primary-text;
+    }
+}

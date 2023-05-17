@@ -1,0 +1,65 @@
+@use "../../container/index/service.scss";
+@use "../../container/index/varibles.scss";
+
+// кольори статусів повідомлені
+$pendig-color: #2962ff;
+$approved-color: #0bb7af;
+$rejected-color: #f64e60;
+
+.chat-item {
+    display: flex;
+    // викликаючи міксин spacing з файлу service.scss задаємо відступи нашому контейнеру
+    @include service.spacing(2);
+}
+
+.avatar {
+    // викликаючи міксин circle з файлу service.scss створюємо круглий елемент з розміром 50px
+    @include service.circle(50);
+}
+
+.chat-item-info {
+    display: grid;
+    // викликаючи міксин spacing з файлу service.scss задаємо відступи нашому контейнеру
+    @include service.spacing(2);
+}
+
+.name {
+    font-weight: 600;
+    font-size: 16px;
+    // використовуємо змінні
+    color: varibles.$primary-text;
+}
+
+.message {
+    font-weight: 400;
+    font-size: 16px;
+    // використовуємо змінні
+    color: varibles.$primary-text;
+}
+
+.chip {
+    border-radius: 5px;
+    padding: 4px 8px;
+    width: fit-content;
+}
+
+.rejected {
+    // успадковуємо стилі класу .chip
+    @extend .chip;
+    // використовуємо змінні
+    background-color: $rejected-color;
+}
+
+.pending {
+    // успадковуємо стилі класу .chip
+    @extend .chip;
+    // використовуємо змінні
+    background-color: $rejected-color;
+}
+
+.approved {
+    // успадковуємо стилі класу .chip
+    @extend .chip;
+    // використовуємо змінні
+    background-color: $approved-color;
+}

@@ -11,35 +11,11 @@
       <div class'divider'></div>
     </div>
     <div class="costs-container">
-      <div class="cost-item">
-        <div class="balance"></div>
-        <div class="cost-info">
-          <p>Wallet Balance</p>
-          <p class="price">$3,567.53</p>
-        </div>
-      </div>
-      <div class="cost-item">
-        <div class="ref-earning"></div>
-        <div class="cost-info">
-          <p>Estimate Sales</p>
-          <p class="price">$5,489</p>
-        </div>
-      </div>
-      <div class="cost-item">
-        <div class="sales"></div>
-        <div class="cost-info">
-          <p>Estimate Sales</p>
-          <p class="price">$5,489</p>
-        </div>
-      </div>
-      <div class="cost-item">
-        <div class="earnings"></div>
-        <di class="cost-info"v>
-          <p>Earnings</p>
-          <p class="price"> $23,568</p>
-        </div>
-      </div>
+      {{#each costs}}
+        {{>costItem data=this}}
+      {{/each}}
     </div>
+  </div>
   <div class="container">
     <div class='title'>
       <h3>Recent Comments</h3>
@@ -47,46 +23,9 @@
       <div class'divider'></div>
     </div>
     <div class="chats">
-      <div class="chat-item">
-        <div class="avatar"><img src="dist/img/user1.png"></div>
-        <div class="chat-item-info">
-          <p class="name">James Anderson</p>
-          <p  class="message">Mem Ipsum is simply dummy text of the printing and type setting industry.</p>
-        <div class="pending">Pending</div>
-        </div>
-      </div>
-      <div class="chat-item">
-        <div class="avatar"><img src="dist/img/user2.png"></div>
-        <div class="chat-item-info">
-          <p  class="name">Michael Jorden</p>
-          <p  class="message">Mem Ipsum is simply dummy text of the printing and type setting industry.</p>
-        <div class="approved">Approved</div>
-        </div>
-      </div>
-      <div class="chat-item">
-        <div class="avatar"><img src="dist/img/user3.png"></div>
-        <div class="chat-item-info">
-          <p  class="name">Johnathan Doeting</p>
-          <p  class="message">Mem Ipsum is simply dummy text of the printing and type setting industry.</p>
-        <div class="approved">Approved</div>
-        </div>
-      </div>
-      <div class="chat-item">
-        <div class="avatar"><img src="dist/img/user.png"></div>
-        <div class="chat-item-info">
-          <p  class="name"> Daniel Kristeen</p>
-          <p  class="message">Mem Ipsum is simply dummy text of the printing and type setting industry.</p>
-        <div class="pending">Pending</div>
-        </div>
-      </div>
-      <div class="chat-item">
-        <div class="avatar"><img src="dist/img/user5.png"></div>
-        <div class="chat-item-info">
-          <p  class="name">Jan Petrovic</p>
-          <p  class="message">Mem Ipsum is simply dummy text of the printing and type setting industry.</p>
-          <div class="rejected">Rejected</div>
-        </div>
-      </div>
+      {{#each chats}}
+        {{>chatItem data=this}}
+      {{/each}}
     </div>
   </div>
 </div>

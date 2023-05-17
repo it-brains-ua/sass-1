@@ -1,0 +1,15 @@
+<link
+  href='dist/css/component/chatItem/style.css'
+  rel='stylesheet'
+/>
+
+<div class='chat-item'>
+  <div class='avatar'><img src='{{data.img}}' /></div>
+  <div class='chat-item-info'>
+    <p class='name'>{{data.name}}</p>
+    <p class='message'>{{data.message}}.</p>
+    <div
+      class='{{data.status.class}}'
+    >{{data.status.text}}</div>
+  </div>
+</div>
