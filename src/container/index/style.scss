@@ -3,10 +3,6 @@
 @use "../../component/chatItem/style.scss" as chatItem;
 @use "../../component/costItem/style.scss" as costItem;
 
-body {
-  background-color: #757e85;
-}
-
 .wrapper {
   display: grid;
   margin: 30px auto;
