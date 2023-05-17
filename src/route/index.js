@@ -50,7 +50,7 @@ router.get('/', function (req, res) {
         message:
           'Mem Ipsum is simply dummy text of the printing and type setting industry.',
         img: 'dist/img/user5.png',
-        status: { text: 'rejected', class: 'rejected' },
+        status: { text: 'Rejected', class: 'rejected' },
       },
     ],
     costs: [
