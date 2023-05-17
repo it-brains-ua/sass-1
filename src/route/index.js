@@ -13,6 +13,7 @@ router.get('/', function (req, res) {
 
   // ↙️ cюди вводимо назву файлу з сontainer
   res.render('index', {
+    // вказуємо назву папки контейнера, в якій знаходяться наші стилі
     style: 'index',
     // layout потрібно підключати у форматі layout:'<folder_name>/index'
     layout: 'background/index',
