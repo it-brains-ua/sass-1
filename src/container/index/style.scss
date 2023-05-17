@@ -3,9 +3,6 @@
 @use "../../component/chatItem/style.scss" as chatItem;
 @use "../../component/costItem/style.scss" as costItem;
 
-// виведемо в консоль повідомлення про помилку
-// @error "Test error message";
-
 body {
   background-color: #757e85;
 }
