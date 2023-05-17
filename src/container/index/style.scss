@@ -1,5 +1,5 @@
-@use "./service.scss";
-@use "./varibles.scss";
+@use "../../lib/service.scss";
+@use "../../lib/varibles.scss";
 @use "../../component/chatItem/style.scss" as chatItem;
 @use "../../component/costItem/style.scss" as costItem;
 
