@@ -14,6 +14,8 @@ router.get('/', function (req, res) {
   // ↙️ cюди вводимо назву файлу з сontainer
   res.render('index', {
     style: 'index',
+    // layout потрібно підключати у форматі layout:'<folder_name>/index'
+    layout: 'background/index',
     chats: [
       {
         name: 'James Anderson',
