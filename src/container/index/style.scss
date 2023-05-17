@@ -1,0 +1,183 @@
+@use "./service.scss";
+
+@use "./varibles.scss";
+
+body {
+  background-color: #757e85;
+}
+
+.wrapper {
+  display: grid;
+  margin: 30px auto;
+  width: 70%;
+  // викликаючи міксин spacing з файлу service.scss задаємо відступи нашому контейнеру
+
+  @include service.spacing(8);
+}
+
+.container {
+  background-color: #fff;
+  display: grid;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.title {
+  // використовуючи вкладеність задаємо стилі тегу h3 який знаходиться в елементі з класом .title
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+    // використовуємо змінні записані в файлі varibles.scss
+    color: varibles.$primary-text;
+  }
+  // використовуючи вкладеність задаємо стилі тегу p який знаходиться в елементі з класом .title
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    // використовуємо змінні записані в файлі varibles.scss
+    color: varibles.$secondary-text;
+  }
+  margin-bottom: 24px;
+}
+
+.divider {
+  height: 1px;
+  width: 90%;
+  background-color: #dee2e6;
+}
+
+.costs-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cost-item {
+  display: flex;
+  // викликаючи міксин spacing з файлу service.scss задаємо відступи нашому контейнеру
+  @include service.spacing(2);
+  align-items: center;
+}
+img {
+  opacity: 1;
+}
+.cost {
+  opacity: 0.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.balance {
+  // викликаючи міксин circle з файлу service.scss створюємо круглий елемент з розміром 50px
+  @include service.circle(50);
+  // успадковуємо стилі класу .cost
+  @extend .cost;
+  // використовуємо змінні записані в файлі varibles.scss
+  background-color: varibles.$balance-color;
+}
+
+.ref-earning {
+  // викликаючи міксин circle з файлу service.scss створюємо круглий елемент з розміром 50px
+  @include service.circle(50);
+  // успадковуємо стилі класу .cost
+  @extend .cost;
+  // використовуємо змінні записані в файлі varibles.scss
+  background-color: varibles.$ref-earning-color;
+}
+
+.sales {
+  // викликаючи міксин circle з файлу service.scss створюємо круглий елемент з розміром 50px
+  @include service.circle(50);
+  // успадковуємо стилі класу .cost
+  @extend .cost;
+  // використовуємо змінні записані в файлі varibles.scss
+  background-color: varibles.$sales-color;
+}
+
+.earning {
+  // викликаючи міксин circle з файлу service.scss створюємо круглий елемент з розміром 50px
+  @include service.circle(50);
+  // успадковуємо стилі класу .cost
+  @extend .cost;
+  // використовуємо змінні записані в файлі varibles.scss
+  background-color: varibles.$earning-color;
+}
+
+.cost-info {
+  // використовуючи вкладеність задаємо стилі тегу p який знаходиться в елементі з класом .cost-info
+  p {
+    font-weight: 400;
+    // використовуємо змінні записані в файлі varibles.scss
+    color: varibles.$secondary-text;
+  }
+  // використовуючи вкладеність задаємо стилі елементу з класом .price який знаходиться в елементі з класом .cost-info
+  .price {
+    font-weight: 600;
+    font-size: 24px;
+    // використовуємо змінні записані в файлі varibles.scss
+    color: varibles.$primary-text;
+  }
+}
+
+.chip {
+  border-radius: 5px;
+  padding: 4px 8px;
+  width: fit-content;
+}
+
+.rejected {
+  // успадковуємо стилі класу .chip
+  @extend .chip;
+  // використовуємо змінні записані в файлі varibles.scss
+  background-color: varibles.$rejected-color;
+}
+
+.pending {
+  // успадковуємо стилі класу .chip
+  @extend .chip;
+  // використовуємо змінні записані в файлі varibles.scss
+  background-color: varibles.$rejected-color;
+}
+
+.approved {
+  // успадковуємо стилі класу .chip
+  @extend .chip;
+  // використовуємо змінні записані в файлі varibles.scss
+  background-color: varibles.$approved-color;
+}
+
+.chats {
+  display: grid;
+  // викликаючи міксин spacing з файлу service.scss задаємо відступи нашому контейнеру
+  @include service.spacing(4);
+}
+.chat-item {
+  display: flex;
+  // викликаючи міксин spacing з файлу service.scss задаємо відступи нашому контейнеру
+  @include service.spacing(2);
+}
+
+.avatar {
+  // викликаючи міксин circle з файлу service.scss створюємо круглий елемент з розміром 50px
+  @include service.circle(50);
+}
+
+.chat-item-info {
+  display: grid;
+  // викликаючи міксин spacing з файлу service.scss задаємо відступи нашому контейнеру
+  @include service.spacing(2);
+}
+
+.name {
+  font-weight: 600;
+  font-size: 16px;
+  // використовуємо змінні записані в файлі varibles.scss
+  color: varibles.$primary-text;
+}
+
+.message {
+  font-weight: 400;
+  font-size: 16px;
+  // використовуємо змінні записані в файлі varibles.scss
+  color: varibles.$primary-text;
+}

@@ -1,0 +1,6 @@
+// оскільки @import імпортує всі данні з файлу навіть ті які були імпортовані в нього в нас відразу є до них доступ
+@import "./style2.scss";
+
+.container2 {
+  background-color: $second-color;
+}

@@ -6,7 +6,7 @@
     "start": "node ./index.js",
     "client": "nodemon -e js,hbs,json,css ./index.js",
     "watch": "webpack --watch",
-    "sass:build": "sass sass:public/css",
+    "sass:build": "sass sсss:public/css",
     "sass:watch": "sass --watch src:public/dist/css",
     "dev": "run-p sass:watch client"
   },
