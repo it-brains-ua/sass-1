@@ -9,7 +9,7 @@ body {
 .wrapper {
   display: grid;
   margin: 30px auto;
-  width: 70%;
+  width: 60%;
   // викликаючи міксин spacing з файлу service.scss задаємо відступи нашому контейнеру
 
   @include service.spacing(8);
@@ -18,7 +18,7 @@ body {
 .container {
   background-color: #fff;
   display: grid;
-  padding: 16px;
+  padding: 16px 32px;
   border-radius: 5px;
 }
 
@@ -94,7 +94,7 @@ img {
   background-color: varibles.$sales-color;
 }
 
-.earning {
+.earnings {
   // викликаючи міксин circle з файлу service.scss створюємо круглий елемент з розміром 50px
   @include service.circle(50);
   // успадковуємо стилі класу .cost

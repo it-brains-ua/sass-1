@@ -5,14 +5,14 @@ body {
 .wrapper {
   display: grid;
   margin: 30px auto;
-  width: 70%;
+  width: 60%;
   gap: 32px;
 }
 
 .container {
   background-color: #fff;
   display: grid;
-  padding: 16px;
+  padding: 16px 32px;
   border-radius: 5px;
 }
 
@@ -51,7 +51,7 @@ img {
   opacity: 1;
 }
 
-.cost, .earning, .sales, .ref-earning, .balance {
+.cost, .earnings, .sales, .ref-earning, .balance {
   opacity: 0.2;
   display: flex;
   justify-content: center;
@@ -79,7 +79,7 @@ img {
   background-color: #ee9d01;
 }
 
-.earning {
+.earnings {
   height: 50px;
   width: 50px;
   border-radius: 50%;
