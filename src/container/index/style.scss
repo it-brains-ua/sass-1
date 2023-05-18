@@ -53,3 +53,14 @@
   // викликаючи міксин spacing з файлу service.scss задаємо відступи нашому контейнеру
   @include service.spacing(4);
 }
+
+@media only screen and (max-width: 1300px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+    width: 100%;
+  }
+}
