@@ -15,6 +15,9 @@ $rejected-color: #f64e60;
 .avatar {
     // викликаючи міксин circle з файлу service.scss створюємо круглий елемент з розміром 50px
     @include service.circle(50);
+    img {
+        width: 50px;
+    }
 }
 
 .chat-item-info {

@@ -15,7 +15,8 @@ $earning-color: #d4e0ff;
 }
 
 .cost {
-    border: 2px solid #f8f8ff;
+    border: 1px solid #dbe0e5;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.05);
 }
 
 .balance {
@@ -68,4 +69,6 @@ $earning-color: #d4e0ff;
         // використовуємо змінні записані в файлі varibles.scss
         color: varibles.$primary-text;
     }
+    display: grid;
+    @include service.spacing(1);
 }

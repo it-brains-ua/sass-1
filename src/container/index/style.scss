@@ -10,6 +10,7 @@
   // викликаючи міксин spacing з файлу service.scss задаємо відступи нашому контейнеру
 
   @include service.spacing(8);
+  padding: 8px;
 }
 
 .container {
@@ -35,6 +36,8 @@
     color: varibles.$secondary-text;
   }
   margin-bottom: 24px;
+  display: grid;
+  @include service.spacing(1);
 }
 
 .divider {
@@ -62,5 +65,13 @@
 @media only screen and (max-width: 1000px) {
   .wrapper {
     width: 100%;
+  }
+}
+
+@media all and (width < 800px) {
+  .costs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include service.spacing(4);
   }
 }

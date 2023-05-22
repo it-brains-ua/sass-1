@@ -22,35 +22,35 @@ router.get('/', function (req, res) {
         name: 'James Anderson',
         message:
           'Mem Ipsum is simply dummy text of the printing and type setting industry.',
-        img: 'dist/img/user1.png',
+        img: '/img/user1.png',
         status: { text: 'Pending', class: 'pending' },
       },
       {
         name: 'Michael Jorden',
         message:
           'Mem Ipsum is simply dummy text of the printing and type setting industry.',
-        img: 'dist/img/user2.png',
+        img: '/img/user2.png',
         status: { text: 'Approved', class: 'approved' },
       },
       {
         name: 'Johnathan Doeting',
         message:
           'Mem Ipsum is simply dummy text of the printing and type setting industry.',
-        img: 'dist/img/user3.png',
+        img: '/img/user3.png',
         status: { text: 'Approved', class: 'approved' },
       },
       {
         name: 'Daniel Kristeen',
         message:
           'Mem Ipsum is simply dummy text of the printing and type setting industry.',
-        img: 'dist/img/user.png',
+        img: '/img/user.png',
         status: { text: 'Pending', class: 'pending' },
       },
       {
         name: 'Jan Petrovic',
         message:
           'Mem Ipsum is simply dummy text of the printing and type setting industry.',
-        img: 'dist/img/user5.png',
+        img: '/img/user5.png',
         status: { text: 'Rejected', class: 'rejected' },
       },
     ],
